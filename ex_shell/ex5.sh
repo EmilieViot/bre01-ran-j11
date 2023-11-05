@@ -1,5 +1,15 @@
-# Dans un fichier ex5.sh écrire un script qui permet de générer un dossier exercice5 avec une structure similaire à l'exercice 1.
-
 #!/bin/bash
 
-cp -R ex_shell ex_shell/exercice5
+mkdir exercice5
+
+cd exercice5
+
+mkdir dc && mkdir marvel
+
+touch dc/superman.txt && touch dc/batman.txt
+
+touch marvel/iron_man.txt && touch marvel/captain_america.txt
+
+echo "Clark Kent" > dc/superman.txt && echo "Bruce Wayne" > dc/batman.txt
+
+echo "Steve Rogers" > marvel/captain_america.txt && echo "Tony Stark" > marvel/iron_man.txt
